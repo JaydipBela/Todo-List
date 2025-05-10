@@ -68,3 +68,48 @@ li {
   margin-left: 5px;
 }
 
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+  
+  .todo-container {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  input[type="text"] {
+    width: 65%;
+  }
+  
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .actions {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  button.add-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
